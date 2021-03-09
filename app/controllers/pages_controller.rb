@@ -3,4 +3,10 @@ class PagesController < ApplicationController
 
   def home
   end
+
+  def index
+    @fakes = Fake.all
+  end
+
+  
 end
