@@ -13,6 +13,30 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "prettier": "^2.2.1",
     "webpack-dev-server": "^3.11.2"
-  }
+  },
+  "description": "Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.",
+  "main": "babel.config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Augustin-DESALOS/rent_me.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Augustin-DESALOS/rent_me/issues"
+  },
+  "homepage": "https://github.com/Augustin-DESALOS/rent_me#readme"
 }

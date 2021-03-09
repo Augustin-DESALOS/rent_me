@@ -1,12 +1,25 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+  <div class="container">
+    <h1>A unique experience..</h1>
+  </div>
+</div>
 
-<ul>
-  <% @fakes.each do |fake| %>
-    <li>
-      <%= fake.nickname %>
-      <%= fake.category %>
-      <%= fake.price %>
-    </li>
-  <% end %>
-</ul>
+<p id="notice"><%= notice %></p>
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <div class="cards">
+      <% @fakes.each do |fake| %>
+        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+          <%= link_to fake.nickname, fake_path(fake) %>
+        </div>
+      <% end %>
+    </div>
+  </tbody>
+</table>
+
