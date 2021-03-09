@@ -1,5 +1,5 @@
 class FakesController < ApplicationController
-
+  
   def show
     @fake = Fake.find(params[:id])
   end
