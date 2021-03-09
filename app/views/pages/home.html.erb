@@ -1,2 +1,12 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
+
+<ul>
+  <% @fakes.each do |fake| %>
+    <li>
+      <%= fake.nickname %>
+      <%= fake.category %>
+      <%= fake.price %>
+    </li>
+  <% end %>
+</ul>
