@@ -1,7 +1,14 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path(@category) %>);">
+  <div class="container">
+    <h1><%= @category.capitalize %></h1>
+    <p>Choose your best <%= @category %></p>
+  </div>
+</div>
+
 <div class="container">
   <div class="cards">
     <% @fakes.each do |fake| %>
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path( fake.category ) %>)">
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()">
         <%= link_to fake.nickname, fake_path(fake) %>
       </div>
     <% end %>
