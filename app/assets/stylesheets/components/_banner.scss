@@ -3,16 +3,19 @@
   background-size: cover;
   background-position: center;
   padding: 150px 0;
+  position: relative;
 }
 
 .banner h1 {
   margin: 0;
-  text-align: center;
   display: flex;
   justify-content: flex-start;
+  position: absolute;
+  left: 100px;
+  top: 40%;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
+  font-size: 50px;
   font-weight: bold;
 }
 
