@@ -6,12 +6,18 @@
 
 <p id="notice"><%= notice %></p>
 
-  <tbody>
     <div class="cards">
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
-        
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path("boss.jpg") %>)">
+        <%= link_to  "Boss", index_fakes_path("boss") %>
+      </div>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path("friend.jpg") %>)">
+        <%= link_to  "friend", index_fakes_path("friend") %>
+      </div>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path("family.jpg") %>)">
+        <%= link_to  "Family", index_fakes_path("family") %>
+      </div>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path("employee.jpg") %>)">
+        <%= link_to  "Employee", index_fakes_path("employee") %>
       </div>
     </div>
-  </tbody>
-</table>
 
