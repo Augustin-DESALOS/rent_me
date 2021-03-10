@@ -2,7 +2,6 @@ class FakesController < ApplicationController
   def index
     @fakes = Fake.where(category: params[:category])
     @category = params[:category]
-    @personality = Fake.where(personality: params[:personality])
   end
 
   def show
