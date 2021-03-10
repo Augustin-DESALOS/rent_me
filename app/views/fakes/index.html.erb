@@ -8,7 +8,7 @@
 <div class="container">
   <div class="cards">
     <% @fakes.each do |fake| %>
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path(fake.personality) %>)">
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path("#{fake.personality}.jpg") %>)">
         <%= link_to fake.nickname.capitalize, fake_path(fake) %>
         <p><%= fake.personality %></p>
       </div>
