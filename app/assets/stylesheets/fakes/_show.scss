@@ -1,15 +1,41 @@
 .container {
   margin: 0 auto;
 }
+// img {
+//   border-radius: 50%;
+//   height: 200px;
+//   width: 200px;
 
-.info {
+// }
+.information {
+  overflow: hidden;
+  height: 120px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
-  justify-content: center;
-}
-h1 {
-  color: red;
+  align-items: center;
 }
 
-.display {
-  display: flex;
+.information img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.information h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.information p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.information .description {
+  padding: 16px;
 }
