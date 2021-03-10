@@ -1,6 +1,6 @@
 <div class="container">
   <div class="information">
-    
+    <%= image_tag(@fake.url) %>
     <div class="description">
       <h2>
         <%= @fake.nickname %>
@@ -11,7 +11,7 @@
         <%= @fake.description %>
         </p>
         <p>
-        <strong>price:</strong>
+        <strong>price:</strong>$
         <%= @fake.price %>
         </p>
         <%= @fake.rating %>
