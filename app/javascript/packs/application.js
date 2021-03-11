@@ -24,19 +24,14 @@ require("channels")
 
 // External imports
 import "bootstrap";
-
-import mapboxgl from 'mapbox-gl'
-
-mapboxgl.accessToken = 'pk.eyJ1IjoiamVzc2VhdXhpcmUiLCJhIjoiY2tsa3I1YXpoMGI5MjJxcWplMmN6c2ZrcCJ9.ia8EqsqTBpBel_5AsfPm0Q';
-const map = new mapboxgl.Map({
-  container: "map",
-  style: 'mapbox://styles/mapbox/streets-v11'
-});
+import "mapbox-gl/dist/mapbox-gl.css";
+import { initMapBox } from '../plugins/init_mapbox';
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
+  initMapBox();
   // Call your functions here, e.g:
   // initSelect2();
 });
