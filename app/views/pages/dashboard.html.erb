@@ -1,13 +1,12 @@
 <h1>Profile</h1>
-<div class="container">
-<div class="card-product">
-  <img src="https://cdn.radiofrance.fr/s3/cruiser-production/2018/08/7c6275ae-2963-402d-87e4-09775db49e07/400x400_tupac_-_time_life_pictures.jpg" />
-  <div class="card-product-infos">
-    <h2><%= current_user.firstname %></h2>
-    <p><%= current_user.description %></p>
+<div class="container col-8">
+  <div class="information">
+    <img src="https://cdn.radiofrance.fr/s3/cruiser-production/2018/08/7c6275ae-2963-402d-87e4-09775db49e07/400x400_tupac_-_time_life_pictures.jpg" />
+      <div class="card-product-infos">
+        <h2><%= current_user.firstname.capitalize %></h2>
+        <p><%= current_user.description %></p>
+      </div>
   </div>
-</div>
-
 </div>
 
 
