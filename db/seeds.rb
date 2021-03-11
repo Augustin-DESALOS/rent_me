@@ -9,7 +9,7 @@ puts "Cleaning database..."
 Fake.destroy_all
 User.destroy_all
 puts "creation d'utilisateurs"
-user1 = User.new(email: "toto@gmail.com",password: "toto21")
+user1 = User.new(email: "toto@gmail.com",password: "toto21",firstname: "tupac",lastname: "shakur",description: "né a Lesane Parish Crooks, né le 16 juin 1971 à New York, connu sous les noms de scène de 2Pac et Makaveli (en forme longue Makaveli The Don Killuminati), et mort assassiné le 13 septembre 1996 à Las Vegas, est un rappeur, poète et acteur américain3. Il est souvent considéré comme étant l'un des plus grands rappeurs de tous les temps.")
 user1.save
 user = User.last
 puts "creation de personnalité"

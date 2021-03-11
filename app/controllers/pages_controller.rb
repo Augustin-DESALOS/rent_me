@@ -4,5 +4,7 @@ class PagesController < ApplicationController
   def home
     @fakes = Fake.all
   end
-  
+  def dashboard
+
+  end
 end
