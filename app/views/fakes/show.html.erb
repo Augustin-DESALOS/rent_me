@@ -3,7 +3,7 @@
     <%= image_tag(@fake.url) %>
     <div class="description">
       <h2>
-        <%= @fake.nickname %>
+        <%= @fake.nickname.capitalize %>
       </h2>
         <%= @fake.category %>
         <%= @fake.personality %>
@@ -11,10 +11,13 @@
         <%= @fake.description %>
         </p>
         <p>
-        <strong>price:</strong>$
-        <%= @fake.price %>
+          <div class="price">
+            <strong>price:  <%= @fake.price %></strong>$
+          </div>
         </p>
-        <%= @fake.rating %>
+          <% @fake.rating.to_i.times do  %>
+            <i class="fas fa-heart"></i>
+          <% end %>
       </div>
     </div>
 </div>
