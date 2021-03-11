@@ -11,19 +11,20 @@
    height: 100%;
   width: 400px;
   object-fit: cover;
-  border-radius: 50%;
+   border-radius: 250px 10px 10px 250px;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   margin: 10px;
+
 }
 
 .card-product h2 {
-  font-size: 16px;
+  font-size: 25px;
   font-weight: bold;
   margin: 0;
 }
 
 .card-product p {
-  font-size: 12px;
+  font-size: 25px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
@@ -31,5 +32,5 @@
 }
 
 .card-product .card-product-infos {
-  padding: 16px;
+  padding: 10px;
 }
