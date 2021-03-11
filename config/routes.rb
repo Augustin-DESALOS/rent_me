@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :fakes, only: [:show, :new] do
     collection do
       get "/category/:category", to: "fakes#index", as: :index
+      get "/profile/:profile", to: "fakes#profile", as: :profile
     end
     resources :renting, only: [:create]
   end

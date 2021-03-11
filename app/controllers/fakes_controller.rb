@@ -11,4 +11,7 @@ class FakesController < ApplicationController
   def new
     @fake = Fake.new
   end
+  def profile
+    # @reservations = current_user.reservations
+  end
 end
