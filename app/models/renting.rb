@@ -1,5 +1,8 @@
-  class Renting < ApplicationRecord
-  belongs_to :user
+class Renting < ApplicationRecord
   belongs_to :fake
-  validates :fake, uniqueness: { scope: :user }
+  belongs_to :user
+  
+  validates :price, presence: true
+  validates :start_date, presence: true
+  validates :end_date, presence: true
 end
