@@ -11,11 +11,8 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
-        <li class="nav-item active">
-          <%= link_to "Home", root_path, class: "nav-link" %>
-        </li>
         <li class="nav-item">
-          <%= link_to "Messages", "#", class: "nav-link" %>
+          <%= link_to "new", fake_renting_index_path(:fake_id), class: "nav-link" %>
         </li>
         <li class="nav-item dropdown">
           <%= image_tag "https://hiphopcorner.fr/wp-content/uploads/frontend/2018/11/image-tupac-amaru-shakur-blue.jpg", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>

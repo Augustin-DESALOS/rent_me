@@ -1,0 +1,7 @@
+<h3>Add a new Rent</h3>
+<%= simple_form_for [fake, renting] do |f| %>
+  <%= f.association :user, input_html: { class: "beautiful-dropdown" }, include_hidden: false %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <%= f.button :submit, class: "btn btn-primary" %>
+<% end %>
