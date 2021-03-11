@@ -6,6 +6,7 @@ class FakesController < ApplicationController
 
   def show
     @fake = Fake.find(params[:id])
+    @renting = Renting.new
   end
 
   def new

@@ -21,5 +21,9 @@
       </div>
     </div>
     <hr>
-    <button type="button" class="btn btn-dark btn-lg btn-block">Book <%= @fake.nickname.capitalize %> </button>
+    <%= simple_form_for([@fake, @renting]) do |f| %>
+    <%= f.input :start_date %>
+    <%= f.input :end_date %>
+    <button type="submit"  class="btn btn-dark btn-lg btn-block">Book <%= @fake.nickname.capitalize %> </button>
+    <% end %>
 </div>
