@@ -22,6 +22,7 @@
               <h5 class="card-title"><%=rent.fake.nickname %></h5>
               <p class="card-text"><%=rent.fake.description %></p>
               <%=rent.fake.price %>
+              <%= link_to "Delete", doudou_path(rent), method: "delete" %>
             </div>
           </div>
       <% end %>
