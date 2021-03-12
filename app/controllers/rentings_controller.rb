@@ -9,7 +9,7 @@ class RentingsController < ApplicationController
     @renting = Renting.new(renting_params)
     @renting.fake = @fake
     @renting.user = current_user
-    @renting.price = (@renting.end_date - @renting.start_date).to_i
+   @renting.price = ((@renting.end_date - @renting.start_date).to_i)*@fake.price
     if @renting.save
       redirect_to dashboard_path(current_user)
     else
