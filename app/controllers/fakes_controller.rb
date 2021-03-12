@@ -5,7 +5,8 @@ class FakesController < ApplicationController
     @markers = @fakes.geocoded.map do |fake|
       {
         lat: fake.latitude,
-        lng: fake.longitude
+        lng: fake.longitude,
+        infoWindow: render_to_string(partial: "info_window", locals: {fake: fake })
       }
     end
   end

@@ -6,10 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "Cleaning database..."
+Renting.destroy_all
 Fake.destroy_all
 User.destroy_all
 puts "creation d'utilisateurs"
-user1 = User.new(email: "toto@gmail.com",password: "toto21",firstname: "tupac",lastname: "shakur",description: "né a Lesane Parish Crooks, né le 16 juin 1971 à New York, connu sous les noms de scène de 2Pac et Makaveli (en forme longue Makaveli The Don Killuminati), et mort assassiné le 13 septembre 1996 à Las Vegas, est un rappeur, poète et acteur américain3. Il est souvent considéré comme étant l'un des plus grands rappeurs de tous les temps.")
+user1 = User.new(email: "toto@gmail.com",password: "toto21",firstname: "tupac",lastname: "shakur",description: "le plus grand rappeur de tout les temps et surement le meilleurs disc joket de tout les temps egalement. Quand pensez vous ? Tupac sort son premier album, 2Pacalypse Now, en 1991, qui fait de lui un acteur majeur du rap West Coast durant les années 199014. Il réalise au cours de sa carrière plusieurs albums à succès comme Strictly 4 My N.I.G.G.A.Z. en 1993 et Me Against the World en 199515. Cette même année, Tupac Shakur, qui a eu des problèmes juridiques, un vol qualifié et une fusillade, est entré en rivalité avec les rappeurs de la côte est et notamment son ancien ami : The Notorious B.I.G.16")
 user1.save
 user = User.last
 puts "creation de personnalité"

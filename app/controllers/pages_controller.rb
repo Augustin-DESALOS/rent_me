@@ -5,6 +5,6 @@ class PagesController < ApplicationController
     @fakes = Fake.all
   end
   def dashboard
-
+    @rentings = Renting.where(user: current_user)
   end
 end

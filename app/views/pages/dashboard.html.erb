@@ -1,14 +1,31 @@
 <h1>Profile</h1>
-<div class="container">
-<div class="card-product">
-  <img src="https://cdn.radiofrance.fr/s3/cruiser-production/2018/08/7c6275ae-2963-402d-87e4-09775db49e07/400x400_tupac_-_time_life_pictures.jpg" />
-  <div class="card-product-infos">
-    <h2><%= current_user.firstname %></h2>
-    <p><%= current_user.description %></p>
+<div class="container col-8">
+  <div class="information">
+    <img src="https://cdn.radiofrance.fr/s3/cruiser-production/2018/08/7c6275ae-2963-402d-87e4-09775db49e07/400x400_tupac_-_time_life_pictures.jpg" />
+      <div class="card-product-infos">
+        <h2><%= current_user.firstname.capitalize %></h2>
+        <p><%= current_user.description %></p>
+
+      </div>
   </div>
 </div>
 
+
+<div class="container col-8">
+<h2>My Rent</h2>
+  <div class="row">
+    <div class="cards">
+      <% @rentings.each do |rent|  %>
+            <div class="card" style="width: 18rem;">
+            <%= image_tag(rent.fake.url) %>
+            <div class="card-body">
+              <h5 class="card-title"><%=rent.fake.nickname %></h5>
+              <p class="card-text"><%=rent.fake.description %></p>
+              <%=rent.fake.price %>
+            </div>
+          </div>
+      <% end %>
+    </div>
+  </div>
 </div>
-
-
 
