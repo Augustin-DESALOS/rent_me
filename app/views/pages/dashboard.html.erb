@@ -12,16 +12,16 @@
 
 
 <div class="container col-8">
-<h2>My Rent</h2>
+<h2 class="dashboard">Dashboard</h2>
   <div class="row">
     <div class="cards">
       <% @rentings.each do |rent|  %>
             <div class="card" style="width: 18rem;">
             <%= image_tag(rent.fake.url) %>
             <div class="card-body">
-              <h5 class="card-title"><%=rent.fake.nickname %></h5>
+              <h5 class="card-title"><%=rent.fake.nickname.capitalize %></h5>
               <p class="card-text"><%=rent.fake.description %></p>
-              <%=rent.fake.price %>
+              <p>Price: <%=rent.fake.price %> $</p>
               <%= link_to "Delete", doudou_path(rent), method: "delete" %>
             </div>
           </div>
